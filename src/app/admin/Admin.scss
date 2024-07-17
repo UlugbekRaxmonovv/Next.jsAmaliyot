@@ -1,0 +1,1186 @@
+.saidbar{
+    position: fixed;
+    display: flex;
+    .admin_panel{
+        grid-column: 1 / 2;
+        padding: 20px 0;
+        border-right: 1px solid gray !important;
+        width: 238px;
+        height: 100vh;
+        transition: all .15s linear;
+   .img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .img_home{
+        img{
+            max-width: 123px;
+            height: 32px;
+            width: 100%;
+           object-fit: contain;
+          }
+         
+    }
+    svg{
+        margin-right: 20px;
+        cursor: pointer;
+      }
+   }
+      ul{
+        width: 220px;
+        height: 144px;
+        margin-top: 20px;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: black;
+                font-family: Poppins;
+
+
+                .uslugi{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    height: 40px;
+                    padding:  0 10px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #f5f5f5;
+                    }
+                }
+
+            }
+        }
+      }
+      ul{
+        li{
+            a{
+                .uslugi.show1{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    height: 40px;
+                    padding:  0 10px;
+                    margin-left: -10px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #f5f5f5;
+                        border-radius: 8px;
+                        margin-right: 20px;
+                        width: 40px;
+                    }
+                 .uslugi_link.show{
+                    p{
+                        display: none;
+                    }
+                 }   
+                }
+            }
+        }
+      }
+    }
+    .admin_panel.show{
+      width: 40px !important;  
+    }
+    .admin_panels{
+        background-color: #F9FAFB;
+        width: 280px;
+        .admin__{
+            padding: 20px 20px;
+            display: flex;
+            gap: 80px;
+            .admin_row{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                .admin_list__{
+                    input{
+                            width: 190px;
+                            height: 32px;
+                            border-radius: 4px;
+                            border: 1px solid gray;
+                            outline: none;
+                            // border: none;
+                            padding:  0 10px;
+                    }
+                }
+                .admin_list__s{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 32px;
+                    height: 32px;
+                    background-color: white;
+                    border: 1px solid gray;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+                .admin_list__w{
+                    width: 72px;
+                    height: 32px;
+                    border-radius: 4px;
+                    border: 1px solid gray;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    gap: 5px;
+                    .chec{
+                        p{
+                            font-family: Poppins;
+                            font-size: 18px;
+                            font-weight: 500;
+                        }
+                    }
+                
+                }
+
+                .delet{
+                    width: 104px;
+                    height: 32px;
+                    border-radius: 4px;
+                    border: 1px solid gray;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    cursor: pointer;
+                    .chec{
+                        p{
+                            font-family: Poppins;
+                            font-size: 18px;
+                            font-weight: 500;
+                        }
+                    }
+                
+                }
+                .delets{
+                    width: 104px;
+                    height: 32px;
+                    border-radius: 4px;
+                    border: 1px solid gray;
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    cursor: pointer;
+                    .chec{
+                        p{
+                            font-family: Poppins;
+                            font-size: 18px;
+                            font-weight: 500;
+                        }
+                    }
+                
+                }
+
+
+            }
+            .klnw{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding:  20px 0;
+                .kliniki{
+                    display: flex;
+                    align-items: center;
+                    width: 230px;
+                    height: 41px;
+                    background-color: #E9EFFD;
+                    padding: 10px 0;
+                    border-radius: 4px;
+                    p{
+                        font-family: Poppins;
+                        font-size: 14px;
+                        color: blue;
+                        padding:  0 10px;
+                        font-weight: 500;
+
+                    }
+                }
+                .klinikis{
+                    display: flex;
+                    align-items: center;
+                    width: 230px;
+                    height: 41px;
+                    padding: 10px 0;
+                    border-radius: 4px;
+                    p{
+                        font-family: Poppins;
+                        font-size: 14px;
+                        color: black;
+                        font-weight: 500;
+                        padding:  0 10px;
+
+                    }
+                }
+            }
+
+        }
+        .klinika{
+            display: flex;
+            align-items: self-start;
+            gap: 65px;
+            padding:  0 10px;
+            cursor: pointer;
+    
+          .klinika_list_all{
+            
+            .klnw{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 0px 10px;
+                .kliniki{
+                    display: flex;
+                    align-items: center;
+                width: 230px;
+                height: 32px;
+                background-color: #E9EFFD;
+                border-radius: 4px;
+                p{
+                    font-family: Poppins;
+                    font-size: 14px;
+                    color: blue;
+                    padding:  0 10px;
+                    font-weight: 500;
+                }
+                }
+                .klinikis{
+                    display: flex;
+                    align-items: center;
+                width: 230px;
+                height: 32px;
+                border-radius: 4px;
+                    p{
+                        font-family: Poppins;
+                        font-size: 14px;
+                        color: black;
+                        font-weight: 500;
+                        padding:  0 10px;
+                    }
+                }
+            }
+            .grid_well{
+                width:  490px !important;
+                border: 1px solid gray;
+                border-radius: 8px;
+                padding: 10px 0;
+                .grid_all{
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  border-bottom: 1px solid gray;
+                   padding:  10px 10px;
+                   .list{
+                   display: flex;
+                   align-items: center;
+                   gap: 10px;
+                   }
+                }
+              }
+          }
+         
+
+        }
+
+    }
+
+}
+
+@media(max-width:900px){
+    .saidbar{
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        .admin_panel{
+            grid-column: 1 / 2;
+            padding: 20px 0;
+            border-right: 1px solid gray !important;
+            width: 180px;
+            height: 100vh;
+            .img{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .img_home{
+                    img{
+                        max-width: 123px;
+                        height: 32px;
+                        width: 100%;
+                       object-fit: contain;
+                      }
+                     
+                }
+                svg{
+                    margin-right: 20px;
+                    cursor: pointer;
+                  }
+               }
+          ul{
+            width: 220px;
+            height: 144px;
+            margin-top: 20px;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-family: Poppins;
+    
+    
+                    .uslugi{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        height: 40px;
+                        padding:  0 10px;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #f5f5f5;
+                            max-width: 160px;
+                        width: 100%;
+                            
+                        }
+                    }
+    
+                }
+            }
+          }
+        }
+        .admin_panels{
+            background-color: #F9FAFB;
+            width: 200px;
+            .admin__{
+                padding: 20px 10px;
+                display: flex;
+                gap: 18px;
+                .admin_row{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    .admin_list__{
+                        input{
+                                width: 140px;
+                                height: 32px;
+                                border-radius: 4px;
+                                border: 1px solid gray;
+                                outline: none;
+                                // border: none;
+                                padding:  0 10px;
+                        }
+                    }
+                    .admin_list__s{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 32px;
+                        height: 32px;
+                        background-color: white;
+                        border: 1px solid gray;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                    .admin_list__w{
+                        width: 72px;
+                        height: 32px;
+                        border-radius: 4px;
+                        border: 1px solid gray;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        gap: 5px;
+                        .chec{
+                            p{
+                                font-family: Poppins;
+                                font-size: 18px;
+                                font-weight: 500;
+                            }
+                        }
+                    
+                    }
+    
+                    .delet{
+                        width: 104px;
+                        height: 32px;
+                        border-radius: 4px;
+                        border: 1px solid gray;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 5px;
+                        cursor: pointer;
+                        .chec{
+                            p{
+                                font-family: Poppins;
+                                font-size: 18px;
+                                font-weight: 500;
+                            }
+                        }
+                    
+                    }
+    
+    
+                }
+                .klnw{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    padding:  20px 0;
+                    .kliniki{
+                        display: flex;
+                        align-items: center;
+                        width: 140px !important;
+                        height: 41px;
+                        background-color: #E9EFFD ;
+                        padding: 10px 0;
+                        border-radius: 4px;
+                        p{
+                            font-family: Poppins;
+                            font-size: 14px;
+                            color: blue;
+                            padding:  0 10px;
+                            font-weight: 500;
+    
+                        }
+                    }
+                    .klinikis{
+                        display: flex;
+                        align-items: center;
+                        width: 140px;
+                        height: 41px;
+                        padding: 10px 0;
+                        border-radius: 4px;
+                        p{
+                            font-family: Poppins;
+                            font-size: 14px;
+                            color: black;
+                            font-weight: 500;
+                            padding:  0 10px;
+    
+                        }
+                    }
+                }
+    
+            }
+            .klinika{
+                display: flex;
+                align-items: self-start;
+                gap: 1px;
+                padding:  0 10px;
+                cursor: pointer;
+              .klinika_list_all{
+                
+                .klnw{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    padding: 0px 1px;
+                    .kliniki{
+                        display: flex;
+                        align-items: center;
+                    width: 180px !important;
+                    height: 32px;
+                    background-color: #E9EFFD;
+                    border-radius: 4px;
+                    p{
+                        font-family: Poppins;
+                        font-size: 14px;
+                        color: blue;
+                        padding:  0 10px;
+                        font-weight: 500;
+                    }
+                    }
+                    .klinikis{
+                        display: flex;
+                        align-items: center;
+                    width: 230px;
+                    height: 32px;
+                    border-radius: 4px;
+                        p{
+                            font-family: Poppins;
+                            font-size: 14px;
+                            color: black;
+                            font-weight: 500;
+                            padding:  0 10px;
+                        }
+                    }
+                }
+                .grid_well{
+                    width:  370px !important;
+                    border: 1px solid gray;
+                    border-radius: 8px;
+                    padding: 10px 0;
+                    margin-left: -10%;
+                    .grid_all{
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      border-bottom: 1px solid gray;
+                       padding:  10px 10px;
+                       .list{
+                       display: flex;
+                       align-items: center;
+                       gap: 10px;
+                       }
+                    }
+                  }
+              }
+             
+    
+            }
+    
+        }
+    
+    }    
+}
+
+
+@media(max-width:652px){
+    .saidbar{
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        .admin_panel{
+            grid-column: 1 / 2;
+            padding: 20px 0;
+            border-right: 1px solid gray !important;
+            width: 180px;
+            height: 100vh;
+            .img{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .img_home{
+                    img{
+                        max-width: 123px;
+                        height: 32px;
+                        width: 100%;
+                       object-fit: contain;
+                      }
+                     
+                }
+                svg{
+                    margin-right: 20px;
+                    cursor: pointer;
+                  }
+               }
+          ul{
+            width: 220px;
+            height: 144px;
+            margin-top: 20px;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-family: Poppins;
+    
+    
+                    .uslugi{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        height: 40px;
+                        padding:  0 10px;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #f5f5f5;
+                            max-width: 160px;
+                        width: 100%;
+                            
+                        }
+                    }
+    
+                }
+            }
+          }
+        }
+        .admin_panels{
+            background-color: white !important;
+            width: 400px;
+            .admin__{
+                padding: 20px 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 18px;
+                .admin_row{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    .admin_list__{
+                        input{
+                                width: 140px;
+                                height: 32px;
+                                border-radius: 4px;
+                                border: 1px solid gray;
+                                outline: none;
+                                // border: none;
+                                padding:  0 10px;
+                        }
+                    }
+                    .admin_list__s{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 32px;
+                        height: 32px;
+                        background-color: white;
+                        border: 1px solid gray;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                    .admin_list__w{
+                        width: 72px;
+                        height: 32px;
+                        border-radius: 4px;
+                        border: 1px solid gray;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        gap: 5px;
+                        .chec{
+                            p{
+                                font-family: Poppins;
+                                font-size: 18px;
+                                font-weight: 500;
+                            }
+                        }
+                    
+                    }
+                    .delets{
+                        display: flex;
+                    }
+    
+                    .delet{
+                        width: 104px;
+                        height: 32px;
+                        border-radius: 4px;
+                        border: 1px solid gray;
+                        display: none;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 5px;
+                        cursor: pointer;
+                        .chec{
+                            p{
+                                font-family: Poppins;
+                                font-size: 18px;
+                                font-weight: 500;
+                            }
+                        }
+                    
+                    }
+    
+    
+                }
+                .klnw{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    padding:  20px 0;
+                    .kliniki{
+                        display: flex;
+                        align-items: center;
+                        width: 140px !important;
+                        height: 41px;
+                        background-color: #E9EFFD ;
+                        padding: 10px 0;
+                        border-radius: 4px;
+                        p{
+                            font-family: Poppins;
+                            font-size: 14px;
+                            color: blue;
+                            padding:  0 10px;
+                            font-weight: 500;
+    
+                        }
+                    }
+                    .klinikis{
+                        display: flex;
+                        align-items: center;
+                        width: 140px;
+                        height: 41px;
+                        padding: 10px 0;
+                        border-radius: 4px;
+                        p{
+                            font-family: Poppins;
+                            font-size: 14px;
+                            color: black;
+                            font-weight: 500;
+                            padding:  0 10px;
+    
+                        }
+                    }
+                }
+    
+            }
+            .klinika{
+                display: flex;
+                align-items: self-start;
+                // flex-wrap: wrap;
+                // justify-content: center;
+                gap: 40px;
+                padding:  0 10px;
+                cursor: pointer;
+              .klinika_list_all{
+                
+                .klnw{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    padding: 0px 1px;
+                    .kliniki{
+                        display: flex;
+                        align-items: center;
+                    width: 100px !important;
+                    height: 32px;
+                    background-color: #E9EFFD;
+                    border-radius: 4px;
+                    p{
+                        font-family: Poppins;
+                        font-size: 14px;
+                        color: blue;
+                        padding:  0 10px;
+                        font-weight: 500;
+                    }
+                    }
+                    .klinikis{
+                        display: flex;
+                        align-items: center;
+                    width: 100px;
+                    height: 32px;
+                    border-radius: 4px;
+                        p{
+                            font-family: Poppins;
+                            font-size: 14px;
+                            color: black;
+                            font-weight: 500;
+                            padding:  0 10px;
+                        }
+                    }
+                }
+                .grid_well{
+                    width:  300px !important;
+                    border: 1px solid gray;
+                    border-radius: 8px;
+                    padding: 10px 0;
+                    margin-left: -10%;
+                    .grid_all{
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      border-bottom: 1px solid gray;
+                       padding:  10px 10px;
+                       .list{
+                       display: flex;
+                       align-items: center;
+                       gap: 10px;
+                       }
+                    }
+                  }
+              }
+             
+    
+            }
+    .klinika.klinika_show{
+        display: flex;
+        align-items: self-start;
+        // flex-wrap: wrap;
+        // justify-content: center;
+        gap: 1px;
+        padding:  0 10px;
+        cursor: pointer;
+      .klinika_list_all{
+        
+        .klnw{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 0px 1px;
+            .kliniki{
+                display: flex;
+                align-items: center;
+            width: 180px !important;
+            height: 32px;
+            background-color: #E9EFFD;
+            border-radius: 4px;
+            p{
+                font-family: Poppins;
+                font-size: 14px;
+                color: blue;
+                padding:  0 10px;
+                font-weight: 500;
+            }
+            }
+            .klinikis{
+                display: flex;
+                align-items: center;
+            width: 230px;
+            height: 32px;
+            border-radius: 4px;
+                p{
+                    font-family: Poppins;
+                    font-size: 14px;
+                    color: black;
+                    font-weight: 500;
+                    padding:  0 10px;
+                }
+            }
+        }
+        .grid_well{
+            width:  300px !important;
+            border: 1px solid gray;
+            border-radius: 8px;
+            padding: 10px 0;
+            margin-left: -10%;
+            .grid_all{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              border-bottom: 1px solid gray;
+               padding:  10px 10px;
+               .list{
+               display: flex;
+               align-items: center;
+               gap: 10px;
+               }
+            }
+          }
+      }
+    }
+        }
+    
+    }    
+}
+
+@media(max-width:500px){
+    .saidbar{
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        .admin_panel{
+            grid-column: 1 / 2;
+            padding: 20px 0;
+            border-right: 1px solid gray !important;
+            width: 180px;
+            height: 100vh;
+            .img{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .img_home{
+                    img{
+                        max-width: 123px;
+                        height: 32px;
+                        width: 100%;
+                       object-fit: contain;
+                      }
+                     
+                }
+                svg{
+                    margin-right: 20px;
+                    cursor: pointer;
+                  }
+               }
+          ul{
+            width: 220px;
+            height: 144px;
+            margin-top: 20px;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-family: Poppins;
+    
+    
+                    .uslugi{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        height: 40px;
+                        padding:  0 10px;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #f5f5f5;
+                            max-width: 160px;
+                        width: 100%;
+                            
+                        }
+                    }
+    
+                }
+            }
+          }
+        }
+        .admin_panels{
+            background-color: white !important;
+            width: 200px;
+            .admin__{
+                padding: 20px 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 18px;
+                .admin_row{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 5px;
+                    .admin_list__{
+                        input{
+                                width: 140px;
+                                height: 32px;
+                                border-radius: 4px;
+                                border: 1px solid gray;
+                                outline: none;
+                                // border: none;
+                                padding:  0 10px;
+                        }
+                    }
+                    .admin_list__s{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 32px;
+                        height: 32px;
+                        background-color: white;
+                        border: 1px solid gray;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                    .admin_list__w{
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 4px;
+                        border: 1px solid gray;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        gap: 5px;
+                        .chec{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            p{
+                                font-family: Poppins;
+                                font-size: 18px;
+                                font-weight: 500;
+                                display: none;
+                            }
+                        }
+                    
+                    }
+                    .delets{
+                        display: flex;
+                      
+                    }
+    
+                    .delet{
+                        width: 104px;
+                        height: 32px;
+                        border-radius: 4px;
+                        border: 1px solid gray;
+                        display: none;
+                    }
+    
+    
+                }
+                .klnw{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    padding:  20px 0;
+                    .kliniki{
+                        display: flex;
+                        align-items: center;
+                        width: 140px !important;
+                        height: 41px;
+                        background-color: #E9EFFD ;
+                        padding: 10px 0;
+                        border-radius: 4px;
+                        p{
+                            font-family: Poppins;
+                            font-size: 14px;
+                            color: blue;
+                            padding:  0 10px;
+                            font-weight: 500;
+    
+                        }
+                    }
+                    .klinikis{
+                        display: flex;
+                        align-items: center;
+                        width: 140px;
+                        height: 41px;
+                        padding: 10px 0;
+                        border-radius: 4px;
+                        p{
+                            font-family: Poppins;
+                            font-size: 14px;
+                            color: black;
+                            font-weight: 500;
+                            padding:  0 10px;
+    
+                        }
+                    }
+                }
+    
+            }
+            .klinika{
+                display: flex;
+                align-items: self-start;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                padding:  0 10px;
+                cursor: pointer;
+              .klinika_list_all{
+                
+                .klnw{
+                    display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+            padding: 0px 10px;
+            margin-left: 15%;
+            max-width: 400px;
+            width: 100%;
+                    .kliniki{
+                        display: flex;
+                        align-items: center;
+                    width: 100px !important;
+                    height: 32px;
+                    background-color: #E9EFFD;
+                    border-radius: 4px;
+                    p{
+                        font-family: Poppins;
+                        font-size: 14px;
+                        color: blue;
+                        padding:  0 10px;
+                        font-weight: 500;
+                    }
+                    }
+                    .klinikis{
+                        display: flex;
+                        align-items: center;
+                    width: 100px !important;
+                    height: 32px;
+                    border-radius: 4px;
+                        p{
+                            font-family: Poppins;
+                            font-size: 14px;
+                            color: black;
+                            font-weight: 500;
+                            padding:  0 10px;
+                        }
+                    }
+                }
+                .grid_well{
+                    width:  275px !important;
+                    border: 1px solid gray;
+                    border-radius: 8px;
+                    padding: 10px 0;
+                    margin-left: 17%;
+                    .grid_all{
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      border-bottom: 1px solid gray;
+                       padding:  10px 10px;
+                       .list{
+                       display: flex;
+                       align-items: center;
+                       gap: 10px;
+                       }
+                    }
+                  }
+              }
+             
+    
+            }
+    .klinika.klinika_show{
+        display: flex;
+        align-items: self-start;
+        // flex-wrap: wrap;
+        // justify-content: center;
+        gap:40px;
+        padding:  0 10px;
+        cursor: pointer;
+      .klinika_list_all{
+        
+        .klnw{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+            padding: 0px 10px;
+            margin-left: 15%;
+            max-width: 400px;
+            width: 100%;
+            .kliniki{
+                display: flex;
+                align-items: center;
+            width: 100px !important;
+            height: 32px;
+            background-color: #E9EFFD;
+            border-radius: 4px;
+            p{
+                font-family: Poppins;
+                font-size: 14px;
+                color: blue;
+                padding:  0 10px;
+                font-weight: 500;
+            }
+            }
+            .klinikis{
+                display: flex;
+                align-items: center;
+            width: 230px;
+            height: 32px;
+            border-radius: 4px;
+                p{
+                    font-family: Poppins;
+                    font-size: 14px;
+                    color: black;
+                    font-weight: 500;
+                    padding:  0 10px;
+                }
+            }
+        }
+        .grid_well{
+            width:  400px !important;
+            border: 1px solid gray;
+            border-radius: 8px;
+            padding: 10px 0;
+            margin-left: 28%;
+            .grid_all{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              border-bottom: 1px solid gray;
+               padding:  10px 10px;
+               .list{
+               display: flex;
+               align-items: center;
+               gap: 10px;
+               }
+            }
+          }
+      }
+    }
+        }
+    
+    }    
+}
