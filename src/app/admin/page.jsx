@@ -44,7 +44,7 @@ const Page = ({children}) => {
             <li>
             <Link href={'/admin/uslugi'}>
                       <div className={`uslugi ${menu ? "show1" : ""}`}>
-                      <div className="uslugi_links">
+                      <div className="uslugi_link">
                         <Image src={uslugi} alt='uslugi' />
                         </div>
                         <div className={`uslugi_link ${menu ? "show" : ""}`}>
@@ -110,8 +110,8 @@ const Page = ({children}) => {
         </div>
         <div className="admin_row">
         <div className="admin_list__w">
-        <div className="chec">
-          <input type="checkbox" placeholder='Название' />
+        <div className="checs">
+          <input type="checkbox" placeholder='Название' className='checkbox' />
           </div>
           <div className="chec">
           <p>Все</p>
@@ -160,8 +160,8 @@ const Page = ({children}) => {
             <div className="grid_well">
               <div className="grid_all">
             <div className="list">
-            <div className="grid_row">
-                  <input type="checkbox" />
+            <div className="grid_rows">
+                  <input className='checkbox' type="checkbox" />
                 </div>
                 <div className="grid_row">
                   <p>Акшерство</p>
